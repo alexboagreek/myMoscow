@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="141.111mm" height="141.111mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 14111 14111"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#37364C;fill-rule:nonzero}
+    .fil1 {fill:#fdc931;fill-rule:nonzero}
+    .fil2 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_624226672">
+   <path class="fil0" d="M7043 11737l25 0c-2575,0 -4670,-2095 -4670,-4670 0,-2575 2095,-4670 4670,-4670l-25 0c2575,0 4671,2095 4671,4670 0,2575 -2096,4670 -4671,4670z"/>
+   <g>
+    <g>
+     <path class="fil1" d="M7043 34c4,0 9,1 13,1 4,0 8,-1 12,-1l-25 0z"/>
+     <path class="fil1" d="M7068 14099c-4,0 -8,0 -12,0 -4,0 -9,0 -13,0l25 0z"/>
+     <path class="fil1" d="M14076 7067c0,-3874 -3148,-7025 -7020,-7032 -3872,7 -7020,3158 -7020,7032 0,3873 3148,7025 7020,7032 3872,-7 7020,-3159 7020,-7032zm-7020 4670l0 0c4,0 8,0 12,0l-25 0c4,0 9,0 13,0 -2570,-7 -4658,-2099 -4658,-4670 0,-1168 432,-2237 1144,-3056 47,14 93,27 140,40 312,88 607,171 951,564l174 -152c-389,-445 -731,-541 -1062,-634 -10,-3 -20,-6 -29,-8 847,-875 2030,-1421 3340,-1424 -4,0 -9,0 -13,0l25 0c-4,0 -8,0 -12,0 2569,7 4658,2099 4658,4670 0,2571 -2089,4663 -4658,4670z"/>
+     <path class="fil1" d="M4744 4811l-261 250c-504,484 -651,1199 -437,1820 79,229 206,445 385,632l350 365 1512 -1450 -161 -168 -1388 -1449z"/>
+    </g>
+    <g>
+     <g>
+      <path class="fil2" d="M9709 6756l-1154 -1203 -440 -460 -1414 1342 1 2 -1722 1649 1600 1669c662,691 1760,715 2451,53l626 -600c691,-662 714,-1760 52,-2452z"/>
+      <path class="fil2" d="M7560 4514c-662,-691 -1760,-715 -2451,-52l-156 150 1459 1523 105 109 1414 -1343 -371 -387z"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

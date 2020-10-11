@@ -1,0 +1,946 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+  
+}
+.header{
+    position: relative;
+    z-index: 1;
+}
+.header-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.header-logo{
+    margin-top: 12px;
+    align-items: center;
+    display: flex;
+  
+}
+.connect-item{
+    color: #fff;
+    font-size: 32px;
+}
+.text-item{
+
+    color: #062033;
+    font-size: 18px;
+}
+.logo-img{
+    display: flex;
+    align-items: center;
+}
+.logo-link{
+    margin-left: 5px;
+    align-items: center;
+    text-decoration: none;
+    color: #062033;
+    font-family: "Roboto - Condensed";
+    font-size: 22px;
+}
+.header-body{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+.header-link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.header-list{
+    display: flex;
+}
+.header-list li{
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+.menu-btn{
+    display: block;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after 
+
+{
+    position: absolute;
+    top: 50%;margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+    content: "";
+    display: block;
+    transition: 0.3s;
+}
+.menu-btn span::before{
+    transform: translateY(-5px);
+}
+.menu-btn span::after{
+    transform: translateY(5px);
+}
+.menu-btn_active span:before{
+    transform:rotate(45deg);
+}
+.menu-btn_active span:after{
+    transform:rotate(-45deg);
+}
+.menu-btn_active span{
+    height: 0;
+}
+/* фон для trips */
+.back {
+    background: url(../myproject/img/top1.jpg) center center / cover no-repeat;
+}
+
+/* фон для контактов*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.img_style{
+    background: url(../myproject/img/top2.jpg) center center / cover no-repeat;
+}
+.form-text{
+    color: #062033;
+    font-family: "Roboto - Condensed";
+    font-size: 22px;  
+}
+.nav{
+    display: flex;
+}
+.nav-link{
+    font-family: "Roboto";
+    margin: 10px;
+    color:white;
+    text-decoration: none;
+    opacity: 68%;
+}
+.nav-link:hover{
+    opacity: 100%;
+    font-size: 28px;
+    color: lightgreen;
+    transition: 1s;
+}
+.h-intro{
+    color: white;
+    font-family: "roboto";
+    font-size: 36px;
+}
+.p-intro{
+    color: white;
+    font-family: "roboto";
+    font-size: 18px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+  
+}
+.connect{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background:#709DCA;
+    color: white;
+    font-weight: "roboto";
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.top{
+    position: relative;
+
+}
+.slider{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.slider-line{
+    display: flex;
+    position: relative;
+    height: 100%;
+    left:0;
+}
+.slider-line-item{
+    display: flex;
+    min-width: 100%;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    background: center center / cover no-repeat;
+}
+
+.slider-line-item:nth-child(1),
+.slider-line-item:nth-last-child(1){
+    background: url(img/top.jpg) center center / cover no-repeat;
+}
+.slider-line-item:nth-child(2){
+    background:url(img/top2.jpg) center center / cover no-repeat ;
+}
+.slider-line-item:nth-child(3){
+    background:url(img/origin.jpg) center center / cover no-repeat ;
+}
+.slider-line-item:nth-child(4){
+    background:url(img/7.jpg) center center / cover no-repeat ;
+}
+.slider-line-item:nth-child(5){
+    background:url(img/-unsplash\(2\).jpg) center center / cover no-repeat ;
+}
+.slider-line-item:nth-child(6){
+    background:url(img/unsplash\ \(1\).jpg) center center / cover no-repeat ;
+}
+.slider-line-item:nth-child(7){
+    background:url(img/unsplash\ \(3\).jpg) center center / cover no-repeat ;
+}
+
+.slider-right-button{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right:0 ;
+    height: 100%;
+    width: 80px;
+    color: white;
+    font-size: 80px;
+    background-color: rgba(216, 191, 216, 0.288);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slider-left-button{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 80px;
+    color: white;
+    font-size: 80px;
+    background-color: rgba(216, 191, 216, 0.288);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* Пагинация слайдера */
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slider-pagination-item {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.slider-pagination-item:last-child {
+    margin-right: 0;  
+}
+
+.slider-pagination-item {
+    background: url(/img/slider/slider-pagination-dot.png) center center / 7px 7px no-repeat;
+}
+
+.slider-pagination-item-active {
+    border: 2px solid #FFFFFF;
+    border-radius: 23px;
+}
+.info-text{
+    background: #FFC155;
+}
+.info-text p{
+    margin-bottom: 25px;
+}
+
+.blocks-item{
+    display: flex;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;   
+}
+.blocks{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.logo-flex{
+    background: url(1/icons/map.png) center center no-repeat;
+    width: 80px;
+    height: 60px;
+}
+.logo2-flex{
+    background: url(1/icons/souvenir.png) center center no-repeat;
+    width: 80px;
+    height: 60px;
+}
+.logo3-flex{
+    background: url(1/icons/compass.png) center center no-repeat;
+    width: 80px;
+    height: 60px;
+}
+.logo4-flex{
+    background: url(1/icons/picture.png) center center no-repeat;
+    width: 80px;
+    height: 60px;
+}
+.logo5-flex{
+    background: url(1/icons/discussion.png) center center no-repeat;
+    width: 80px;
+    height: 60px;
+}
+.logo6-flex{
+    background: url(1/icons/sun.png) center center no-repeat;
+    width: 80px;
+    height: 60px;
+}
+/* стили секции о нас*/
+.company {
+    display: flex;
+    
+}
+
+.company div {
+    width: 50%;
+}
+
+.company-photo {
+    background: url(1/photos/group.jpg) center center / cover no-repeat;
+    background-position: center center;
+}
+/*.photo3{
+    background: url(img/3_03.jpg) center center / cover no-repeat;
+}*/
+.img-tours{
+    background: url(img/2_04.jpg) center center / cover no-repeat ;
+    background-position: center center;
+}
+.tours-item3{
+    background: url(img/2_02.jpg) center center / cover no-repeat ;
+    background-position: center center;
+}
+.company-description {
+    background-color: #ffc155;
+    box-sizing: border-box;
+    padding: 20px;
+    max-height: 500px;
+
+}
+.section2{
+    background: url(img/2_02.jpg) center center / cover no-repeat;
+    box-sizing: border-box;
+    width: 50%;
+
+}
+.img-tours div{
+    width: 50%;
+}
+
+.company-heading {
+    font-size: 28px;
+    color: white;
+    text-align: left;
+}
+
+.company-text {
+    color: white;
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.company-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #F3AF37;
+    border: 1px solid #FFA300;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+}
+.promo{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-family: "roboto";
+    text-align: center;
+}
+.sub-text{
+    text-align: center;
+    font-size: 28px;
+    color: #394B50;
+}
+
+.text{
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color:#709DCA
+}
+.word{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #394B50;
+}
+.button-info{
+    margin-top: 17px;
+    border: 3px soid gold;
+}
+.bot{
+    margin-top: 18px;
+    text-decoration: none;
+    color:white;
+    background-color: teal;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.font{
+    font-size: 16px;
+    line-height: 19px;
+    color: #394B50;
+    text-transform: uppercase;
+    text-align: left;
+}
+.font-item{
+    font-size: 13px;
+    line-height: 15px;
+    columns: #7b7b7b;
+    text-align: left;
+}
+.info{
+    display: flex;
+    background-color: #FFC155;
+    color: white;
+}
+.info-item{
+    background: url(1/photos/group.jpg) center center / cover;
+    background-repeat: no-repeat;
+    max-height: 700px;
+    box-sizing: border-box;
+   
+}
+.info-item div{
+    width: 50%;
+}
+.company-description{
+    box-sizing: border-box;
+}
+.company-description div{
+    width: 50%;
+} 
+/* стили для секции туров*/
+.tours-item{
+    background: url(img/3_01.jpg) center center / cover no-repeat;
+   
+}
+.tours-item div{ 
+    width: 50%;
+}
+.tours-item3{
+    background: url(img/3_03.jpg) center center / cover no-repeat; 
+    background-repeat: no-repeat;
+  
+}
+
+
+/*  стили для страницы контакты*/
+.boss-photo-left{
+    width: 250px;
+    height: 250px;
+    background: url(../myproject/img/man.jpg) center center /cover;
+    box-sizing: border-box;
+    border-right: 5px solid cornflowerblue;
+}
+.boss-photo-right{
+    width: 250px;
+    height: 250px;
+    background: url(../myproject/img/woman.jpg) center center /cover;
+    box-sizing: border-box;
+    border-right: 5px solid cornflowerblue;
+}
+
+.boss{
+    display: flex;
+}
+.boss-text{
+    padding-left: 5px;
+    background-color: #ffc155;
+}
+.name-boss{
+    color: #062033;
+    font-family: "Roboto - Condensed";
+    font-size: 24px;
+    font-weight: bold;
+}
+.jobber{
+    color: #062033;
+    font-family: "Roboto - Condensed";
+    font-size: 18px;
+}
+.link-boss{
+    text-decoration: none;
+    cursor: pointer;
+    color: #0066ff;
+}
+.boss-spy{
+    color: #062033;
+    font-family: "Roboto - Condensed";
+    font-size: 18px;
+}
+.button-info{
+    color: white;
+    text-decoration: none;
+}
+/* стиль для карты*/
+#map{
+    border-top: 3px solid #ffc155; ;
+   
+}
+.map_balloon{
+    display: flex;
+    align-items: center;
+}
+.nordic_logo{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.middle{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    align-items: center;
+}
+.middle-stick{
+   
+    width: 180px;
+    height: 3px;
+    background-color: rgba(255, 166, 0, 0.514) ;
+    margin: 0 auto;
+}
+
+
+/* Cекция - "Москва в фотографиях" */
+.moscow-photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.moscow-photo {
+    width: 25%;
+    min-height: 280px;
+    flex-basis: 320px;
+    flex-grow: 1;
+    background: center center / cover no-repeat;
+}
+
+.moscow-photo:first-child {
+    background-image: url(1/photos/1.jpg);
+}
+
+.moscow-photo:nth-child(2) {
+    background-image: url(1/photos/2.jpg);
+}
+
+.moscow-photo:nth-child(3) {
+    background-image: url(1/photos/3.jpg);
+}
+
+.moscow-photo:nth-child(4) {
+    background-image: url(1/photos/4.jpg);
+}
+
+.moscow-photo:nth-child(5) {
+    background-image: url(1/photos/5.jpg);
+}
+
+.moscow-photo:nth-child(6) {
+    background-image: url(1/photos/6.jpg);
+}
+
+.moscow-photo:nth-child(7) {
+    background-image: url(1/photos/7.jpg);
+}
+
+.moscow-photo:nth-child(8) {
+    background-image: url(1/photos/8.jpg);
+}
+
+.middle-h{
+    color:#709DCA;
+    text-align: center;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.photos-item{
+    width: 25%;
+    overflow: hidden;
+    height: 350px;
+}
+.company-text {
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 16px;
+}
+.rev{
+    display: flex;
+}
+.rev-text{
+    background-color: #4d4e5081;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.rev-item{
+    margin-top: 25px;
+    margin: 25px;
+    font-size: 18px;
+}
+.slides{
+    
+    text-align: center;
+}
+.post img{
+    margin-top: 18px;
+    height: 68px;
+    width: 68px;
+}
+.post a{
+    margin-top: 18px;
+    text-decoration: none;
+    margin-left: 5px;
+    color: #7b7b7b;
+}
+
+.post{
+    display: flex;
+    margin-top: 38px;
+    background: white;
+}
+
+
+.header-body{
+    display: none;
+}
+.footer{
+    display: flex;
+    background: rgb(0, 41, 130);
+    color: lemonchiffon;
+}
+.footer-margin{
+    margin-top: 66px;
+}
+.p-footer{
+    flex-direction: column;  
+}
+
+.foot-cl{
+    margin-top: 10px;
+}
+
+.foot-cl a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+    
+.copyright-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 2, 128);
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+.copyright-footer-item{
+    margin: 0 auto;
+
+    text-align: center;
+}
+/*СТИЛИ ДЛЯ ФУТЕРА*/
+.footer {
+    background-color: #223741; 
+}
+.margin-top{
+    margin-top: 15px;
+}
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  
+}
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-section{
+    max-width: 393px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.review {
+    padding: 30px;
+    flex-grow: 1;
+    width: 50%;
+    flex-basis: 550px;
+}
+
+.review-text {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 26px;
+}
+
+.review-info {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.review-photo {
+    width: 70px;
+}
+
+.review-name {
+    margin-left: 15px;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #4D4E50;
+}
+.footer-section {
+    flex-grow: 1;
+}
+
+/*.footer-section:first-child {
+    width: 350px;
+}
+
+.footer-section:nth-child(2) {
+    width: 350px;
+}
+
+.footer-section:last-child {
+    width: 350px;
+}
+*/
+.logo-image-footer {
+    width: 37px;
+}
+
+.logo-title-footer {
+    width: 110px;
+    margin-left: 10px;
+}
+
+.footer-section-text {
+    color: #c3c3c3;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+}
+    
+.footer-heading {
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.contacts-item {
+   
+    display: flex;
+    align-items: center;
+}
+
+.contacts-icon {
+    margin-right: 5px;
+    
+}
+
+.contacts-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #C3C3C3; 
+}
+
+.news-date {
+    font-size: 16px;
+    line-height: 16px;
+    color: #71B6D5;
+    margin-top: 5px;
+}
+
+.additional-footer {
+    background-color: #192830;
+    padding: 30px 0; 
+}
+
+.additional-footer-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-link {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.social-link:last-child {
+    margin-right: 0;
+}
+
+.social-icon {
+    width: 40px;
+    background-color: white;
+}
+.position{
+    align-items: center;
+}
+.size{
+    width: 32px;
+    height: 32px;
+}
+.social-footer{
+    align-self: center;
+    cursor: pointer;
+}
+.middle-h{
+    text-align: center;
+}
+.form{
+    width: 550px;
+    background-color: white;
+    
+}
+
+.form-item{
+    margin-bottom: 4px;
+    margin-top: 15px;
+}
+
+[type="text"],[type="number"],[type="email"],[type="submit"], textarea{
+    border:3px solid gold;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px;
+}
+[type="submit"]{
+    background: #062033; ;
+    color: white;
+    cursor: pointer;
+    font-size: 27px;
+    font-family: "Roboto - Condensed";
+}
+textarea{
+    resize: vertical;
+}
+.form-direction{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+/*@media(max-widht: 700px){
+.menu-btn{
+    display:flex;
+}
+*/
+/*@media(max-width:700px){
+    .nav-link{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        margin: 0;
+        pad: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+.snowflake{
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: snow 2s infinite;
+    transform: translateY(0);
+    opacity: 1;
+
+}
+@keyframes snow {
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+}
+
+/*.windowCountFlakeKill{
+    background: chartreuse;
+    color:black;
+    width: 126px;
+    text-align: center;
+    justify-content: center;
+}
+*/
